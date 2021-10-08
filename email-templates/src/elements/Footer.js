@@ -7,6 +7,7 @@ const style = {
   footer: {
     margin: '0 0 60px',
     color: '#3C434B',
+    background: '#ffffff',
   },
 
   p: {
@@ -27,6 +28,10 @@ const style = {
 
   content: {
     width: '100%',
+    paddingRight: '40px',
+    paddingLeft: '40px',
+    paddingTop: '0',
+    paddingBottom: '0',
     padding: '0 40px',
   },
 

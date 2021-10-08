@@ -14,6 +14,10 @@ const style = {
   text: {
     fontSize: '12px',
     lineHeight: '18px',
+    paddingRight: '36px',
+    paddingLeft: '15px',
+    paddingTop: '0',
+    paddingBottom: '0',
     padding: '0px 36px 0 15px',
     color: '#ffffff',
   },
@@ -30,6 +34,10 @@ const style = {
   },
 
   iconContainer: {
+    paddingRight: '0',
+    paddingLeft: '15px',
+    paddingTop: '15px',
+    paddingBottom: '5px',
     padding: '15px 0 5px 15px',
     verticalAlign: 'top',
   }
@@ -44,7 +52,7 @@ function Badge({ children }) {
           <div style={style.icon}>!</div>
         </Grid.Cell>
         <Grid.Cell>
-          <p style={style.text} className="title-heading">
+          <p style={style.text}>
             {children}
           </p>
         </Grid.Cell>
