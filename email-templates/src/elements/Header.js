@@ -15,7 +15,7 @@ const style = {
     width: '100%',
     WebkitBoxShadow: '0px 6px 28px -3px rgba(0,0,0,0.76)',
     boxShadow: '0px 6px 28px -3px rgba(0,0,0,0.76)',
-    color: '#ffffff',
+    color: '#f1f1f1',
   },
 
   img: {
@@ -37,7 +37,7 @@ const style = {
     paddingTop: '39px',
     paddingBottom: '39px',
     padding: '39px 40px',
-    color: '#ffffff',
+    color: '#f1f1f1 !important',
     textAlign: 'right',
     margin: 0,
   },
@@ -46,7 +46,7 @@ const style = {
 function Header(props) {
   const { title } = props;
   return (
-    <Grid style={style.header}>
+    <Grid style={style.header} className="header-bg">
       <Grid.Row>
         <Img style={style.img} src={logoSrc} alt="logo" />
         <p style={style.title} className="header-title">{title}</p>

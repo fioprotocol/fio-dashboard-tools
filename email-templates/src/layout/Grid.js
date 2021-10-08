@@ -71,9 +71,9 @@ function Row({ children, style = {} }) {
   );
 }
 
-function Grid({ children, style = {} }) {
+function Grid({ children, style = {}, className = '' }) {
   return (
-    <table style={{ ...tableStyle.table, ...style }}>
+    <table style={{ ...tableStyle.table, ...style }} className={className}>
       <tbody>
         {React.Children.map(children, (el) => {
           if (!el) return;

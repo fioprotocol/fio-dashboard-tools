@@ -36,7 +36,7 @@ function Email({ type, data }) {
     passRecovery: 'Password Recovery',
   };
   return (
-    <center style={style.container}>
+    <center style={style.container} className="container">
       <Grid style={style.main}>
         <Body>
         <Header title={titles[type]} />

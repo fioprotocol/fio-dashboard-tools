@@ -1,10 +1,25 @@
+:root {
+  color-scheme: light dark;
+  --special-text-color: #f1f1f1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --special-text-color: #f1f1f1;
+  }
+}
+
 a:hover {
   opacity: 0.9;
 }
+
 .header-title {
-  color: white;
+  color: var(--special-text-color) !important;
 }
 @media only screen and (max-width: 650px) {
+
+  .container {
+    padding: 0 !important;
+  }
 
   .title-heading {
     font-size: 18px !important;
@@ -15,6 +30,8 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .header-title {
     font-size: 14px !important;
+    line-height: 18px !important;
   }
 }
+
 

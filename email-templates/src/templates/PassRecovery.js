@@ -8,7 +8,6 @@ const style = {
 
   container: {
     color: '#3C434B',
-    backgroundColor: '#ffffff',
   },
 
   todayContainer: {

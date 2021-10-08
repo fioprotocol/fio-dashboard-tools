@@ -52,7 +52,7 @@ function Badge({ children }) {
           <div style={style.icon}>!</div>
         </Grid.Cell>
         <Grid.Cell>
-          <p style={style.text} className="title-heading">
+          <p style={style.text}>
             {children}
           </p>
         </Grid.Cell>
