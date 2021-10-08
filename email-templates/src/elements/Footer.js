@@ -27,6 +27,10 @@ const style = {
 
   content: {
     width: '100%',
+    paddingRight: '40px',
+    paddingLeft: '40px',
+    paddingTop: '0',
+    paddingBottom: '0',
     padding: '0 40px',
   },
 

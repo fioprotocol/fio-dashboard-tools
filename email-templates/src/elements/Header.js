@@ -10,6 +10,7 @@ const style = {
 
   header: {
     margin: '0 auto',
+    backgroundColor: '#0e0d26',
     background: `linear-gradient(172.92deg, #181642 0%, #000000 100%)`,
     width: '100%',
     WebkitBoxShadow: '0px 6px 28px -3px rgba(0,0,0,0.76)',
@@ -18,6 +19,11 @@ const style = {
 
   img: {
     height: '36px',
+    maxWidth: '74px',
+    paddingRight: '40px',
+    paddingLeft: '40px',
+    paddingTop: '39px',
+    paddingBottom: '39px',
     padding: '39px 40px',
   },
 
@@ -25,6 +31,10 @@ const style = {
     fontSize: '22px',
     lineHeight: '28px',
     fontWeight: '500',
+    paddingRight: '40px',
+    paddingLeft: '40px',
+    paddingTop: '39px',
+    paddingBottom: '39px',
     padding: '39px 40px',
     color: '#ffffff',
     textAlign: 'right',

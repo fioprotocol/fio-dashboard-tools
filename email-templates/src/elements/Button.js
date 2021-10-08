@@ -11,14 +11,15 @@ const style = {
 
   button: {
     width: 'auto',
-    height: '34px',
     backgroundColor: '#4588FF',
     borderRadius: '8px',
     display: 'inline-block',
     fontSize: '12px',
     fontWeight: '600',
-    lineHeight: '34px',
-    padding: '0px 50px',
+    borderTop: '10px solid #4588FF',
+    borderBottom: '10px solid #4588FF',
+    borderLeft: '50px solid #4588FF',
+    borderRight: '50px solid #4588FF',
     color: '#ffffff',
     textDecoration: 'none',
     textAlign: 'center',

@@ -5,7 +5,7 @@ import Grid from '../layout/Grid';
 const style = {
 
   content: {
-    backgroundColor: 'white',
+    backgroundColor: '#ffffff',
     padding: 0,
     margin: 0
   },

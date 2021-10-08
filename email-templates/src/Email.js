@@ -13,6 +13,10 @@ const style = {
 
   container: {
     backgroundColor: '#efefef',
+    paddingRight: '0px',
+    paddingLeft: '0px',
+    paddingTop: '20px',
+    paddingBottom: '20px',
     padding: '20px 0',
     fontFamily: '\'Google Sans\', \'Roboto\', sans-serif',
     letterSpacing: '0.02em'
