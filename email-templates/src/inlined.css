@@ -1,6 +1,9 @@
 a:hover {
   opacity: 0.9;
 }
+.header-title {
+  color: white;
+}
 @media only screen and (max-width: 650px) {
 
   .title-heading {
@@ -8,5 +11,10 @@ a:hover {
     text-align: center !important;
   }
 
+}
+@media only screen and (max-width: 600px) {
+  .header-title {
+    font-size: 14px !important;
+  }
 }
 

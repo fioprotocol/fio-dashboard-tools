@@ -15,6 +15,7 @@ const style = {
     width: '100%',
     WebkitBoxShadow: '0px 6px 28px -3px rgba(0,0,0,0.76)',
     boxShadow: '0px 6px 28px -3px rgba(0,0,0,0.76)',
+    color: '#ffffff',
   },
 
   img: {
@@ -48,7 +49,7 @@ function Header(props) {
     <Grid style={style.header}>
       <Grid.Row>
         <Img style={style.img} src={logoSrc} alt="logo" />
-        <p style={style.title}>{title}</p>
+        <p style={style.title} className="header-title">{title}</p>
       </Grid.Row>
     </Grid>
   );

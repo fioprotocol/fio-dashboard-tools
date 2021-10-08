@@ -7,6 +7,7 @@ const style = {
   footer: {
     margin: '0 0 60px',
     color: '#3C434B',
+    backgroundColor: '#ffffff',
   },
 
   p: {
