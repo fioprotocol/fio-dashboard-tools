@@ -17,6 +17,12 @@ const generate = async (type) => {
   return saveEmail(type, email);
 }
 
-generate('createAccount')
-generate('confirmEmail')
+generate('approveFioRequest')
+generate('rejectFioRequest')
+generate('newFioRequest')
+generate('balanceChange')
+generate('expiringDomains')
+generate('lowBundleCount')
 generate('passRecovery')
+generate('confirmEmail')
+generate('createAccount')
