@@ -2,7 +2,6 @@ import React from 'react';
 import Signature from '../elements/Signature';
 
 import Grid from '../layout/Grid';
-import Img from '../elements/Img';
 import Title from '../elements/Title';
 import Badge from '../elements/Badge';
 
@@ -36,7 +35,7 @@ function CreateAccount({ text }) {
         Please remember that for your security FIO Dashboard Team does not have access to your password or your private keys. We cannot reset your password in case you forget it, like many website do.
       </p>
 
-      <Badge><b>Write down your password</b> - It is very important that you write down your password in a secure location.</Badge>
+      <Badge showIcon={true}><b>Write down your password</b> - It is very important that you write down your password in a secure location.</Badge>
 
       <p style={style.text}>
         <b>You should also set-up Password Recovery</b>, which will require you to set-up two secret questions and answers and send an email to you to access Password Recovery in the future. If you forget the password, you will be asked to click a link in the Password Recovery email and answer the secret questions. If you do not have access to the email or do not remember the secret answers,

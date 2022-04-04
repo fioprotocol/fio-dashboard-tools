@@ -3,7 +3,6 @@ import React from 'react';
 import Grid from '../layout/Grid';
 
 const style = {
-
   wrapper: {
     width: 'auto',
     backgroundColor: '#00c1ff',
@@ -18,7 +17,7 @@ const style = {
     paddingLeft: '15px',
     paddingTop: '0',
     paddingBottom: '0',
-    padding: '0px 36px 0 15px',
+    padding: '10px 36px 10px 15px',
     color: '#ffffff',
   },
 
@@ -40,21 +39,60 @@ const style = {
     paddingBottom: '5px',
     padding: '15px 0 5px 15px',
     verticalAlign: 'top',
-  }
+  },
 
+  gray: {
+    backgroundColor: '#F2F2F2',
+  },
+
+  transparentBackground: {
+    backgroundColor: 'transparent',
+  },
+
+  fullWidth: {
+    width: '100%',
+  },
+
+  blackColor: {
+    color: '#202020',
+  },
+
+  boldText: {
+    fontWeight: '700',
+  },
 };
 
-function Badge({ children }) {
+function Badge({
+  children,
+  showIcon,
+  hasGrayBackground,
+  hasFullWidth,
+  hasBlackText,
+  hasBoldText,
+  transparentBackground,
+}) {
+  let wrapperStyle = style.wrapper;
+  let textStyle = style.text;
+
+  if (hasGrayBackground) wrapperStyle = { ...wrapperStyle, ...style.gray };
+  if (transparentBackground)
+    wrapperStyle = { ...wrapperStyle, ...style.transparentBackground };
+  if (hasFullWidth) wrapperStyle = { ...wrapperStyle, ...style.fullWidth };
+  if (hasBlackText) textStyle = { ...textStyle, ...style.blackColor };
+  if (hasBoldText) textStyle = { ...textStyle, ...style.boldText };
+
   return (
-    <Grid style={style.wrapper}>
+    <Grid style={wrapperStyle}>
       <Grid.Row>
-        <Grid.Cell style={style.iconContainer}>
-          <div style={style.icon}>!</div>
-        </Grid.Cell>
+        {showIcon ? (
+          <Grid.Cell style={style.iconContainer}>
+            <div style={style.icon}>!</div>
+          </Grid.Cell>
+        ) : (
+          <span />
+        )}
         <Grid.Cell>
-          <p style={style.text}>
-            {children}
-          </p>
+          <div style={textStyle}>{children}</div>
         </Grid.Cell>
       </Grid.Row>
     </Grid>
