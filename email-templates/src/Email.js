@@ -4,10 +4,13 @@ import Content from './elements/Content';
 import Grid from './layout/Grid';
 import Header from './elements/Header';
 import Body from './elements/Body';
-import CreateAccount from './templates/CreateAccount';
-import PassRecovery from './templates/PassRecovery';
-import ConfirmEmail from './templates/ConfirmEmail';
+
 import Footer from './elements/Footer';
+
+import {
+  EMAIL_TEMPLATES_TYPES_CONTENT,
+  EMAIL_TEMPLATES_TYPES,
+} from './constants';
 
 const style = {
 
@@ -29,21 +32,14 @@ const style = {
 
 };
 
-function Email({ type, data }) {
-  const titles = {
-    createAccount: 'Welcome to the FIO Dashboard',
-    confirmEmail: 'Confirm Email',
-    passRecovery: 'Password Recovery',
-  };
+function Email({ type }) {
   return (
     <center style={style.container} className="container">
       <Grid style={style.main}>
         <Body>
-        <Header title={titles[type]} />
+          <Header title={type === EMAIL_TEMPLATES_TYPES.EXPIRING_DOMAINS ? `{{mainTitle}}` : EMAIL_TEMPLATES_TYPES_CONTENT[type].title} />
           <Content>
-            {type === 'createAccount' && <CreateAccount data={data} />}
-            {type === 'confirmEmail' && <ConfirmEmail data={data} />}
-            {type === 'passRecovery' && <PassRecovery data={data} />}
+            {EMAIL_TEMPLATES_TYPES_CONTENT[type].renderComponent({ type })}
           </Content>
           <Footer />
         </Body>
