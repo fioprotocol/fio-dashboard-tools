@@ -4,6 +4,7 @@ import TransactionalEmail from './templates/TransactionalEmail';
 import PassRecovery from './templates/PassRecovery';
 import ConfirmEmail from './templates/ConfirmEmail';
 import CreateAccount from './templates/CreateAccount';
+import PurchaseConfirmation from './templates/PurchaseConfirmation';
 import {
   RenderDefaultField,
   RenderCryptoHandleField,
@@ -21,6 +22,7 @@ export const EMAIL_TEMPLATES_TYPES = {
   PASSWORD_RECOVERY: 'passRecovery',
   CONFIRM_EMAIL: 'confirmEmail',
   CREATE_ACCOUNT: 'createAccount',
+  PURCHASE_CONFIRMATION: 'purchaseConfirmation',
 };
 
 export const EMAIL_TEMPLATES_TYPES_CONTENT = {
@@ -58,6 +60,10 @@ export const EMAIL_TEMPLATES_TYPES_CONTENT = {
   [EMAIL_TEMPLATES_TYPES.CREATE_ACCOUNT]: {
     title: 'Welcome to the FIO Dashboard',
     renderComponent: (props) => <CreateAccount {...props} />,
+  },
+  [EMAIL_TEMPLATES_TYPES.PURCHASE_CONFIRMATION]: {
+    title: 'Purchase Confirmation',
+    renderComponent: (props) => <PurchaseConfirmation {...props} />,
   },
 };
 
