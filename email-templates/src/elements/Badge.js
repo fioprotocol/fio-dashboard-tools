@@ -41,8 +41,16 @@ const style = {
     verticalAlign: 'top',
   },
 
-  gray: {
+  blackBackground: {
+    backgroundColor: '#000000',
+  },
+
+  grayBackground: {
     backgroundColor: '#F2F2F2',
+  },
+
+  redBackground: {
+    backgroundColor: '#E33E3E',
   },
 
   transparentBackground: {
@@ -66,6 +74,8 @@ function Badge({
   children,
   showIcon,
   hasGrayBackground,
+  hasBlackBackground,
+  hasRedBackground,
   hasFullWidth,
   hasBlackText,
   hasBoldText,
@@ -74,9 +84,11 @@ function Badge({
   let wrapperStyle = style.wrapper;
   let textStyle = style.text;
 
-  if (hasGrayBackground) wrapperStyle = { ...wrapperStyle, ...style.gray };
-  if (transparentBackground)
-    wrapperStyle = { ...wrapperStyle, ...style.transparentBackground };
+  if (hasGrayBackground) wrapperStyle = { ...wrapperStyle, ...style.grayBackground };
+  if (hasBlackBackground) wrapperStyle = { ...wrapperStyle, ...style.blackBackground };
+  if (hasRedBackground) wrapperStyle = { ...wrapperStyle, ...style.redBackground };
+    if (transparentBackground)
+      wrapperStyle = { ...wrapperStyle, ...style.transparentBackground };
   if (hasFullWidth) wrapperStyle = { ...wrapperStyle, ...style.fullWidth };
   if (hasBlackText) textStyle = { ...textStyle, ...style.blackColor };
   if (hasBoldText) textStyle = { ...textStyle, ...style.boldText };

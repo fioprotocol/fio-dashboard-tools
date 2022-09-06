@@ -26,3 +26,4 @@ generate('lowBundleCount')
 generate('passRecovery')
 generate('confirmEmail')
 generate('createAccount')
+generate('purchaseConfirmation');
