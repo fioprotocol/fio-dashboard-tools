@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Badge from '../elements/Badge';
+import Button from '../elements/Button';
 import Signature from '../elements/Signature';
 import Title from '../elements/Title';
 
@@ -56,6 +57,14 @@ const style = {
 
   txId: {
     wordBreak: 'break-word',
+  },
+
+  link: {
+    fontSize: '12px',
+    lineHeight: '24px',
+    margin: '7px 0',
+    color: '#4588FF',
+    textDecoration: 'none',
   },
 };
 
@@ -185,6 +194,14 @@ function PurchaseConfirmation() {
           {`{{else}}`}
         {`{{/if}}`}
       {`{{/if}}`}
+      <Button>View Order Details</Button>
+
+      <p style={style.text}>
+        If the button above does not work, please use this link:
+      </p>
+      <a href="{{link}}" style={style.link} target="__blank">
+        {`{{link}}`}
+      </a>
       <Signature />
     </Grid>
   );
