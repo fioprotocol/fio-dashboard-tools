@@ -85,12 +85,18 @@ const OrderItems = () => (
           {`{{else}}`}
           <span>@{`{{domain}}`}</span>
           {`{{/if}}`}
+          {`{{#if descriptor}}`}
+          <br />{`{{descriptor}}`}
+          {`{{/if}}`}
         </p>
         {`{{/if}}`}
         {`{{#unless address}}`}
         {`{{#if domain}}`}
         <p style={{ ...style.firstElement, ...style.boldText }}>
           {`{{domain}}`}
+          {`{{#if descriptor}}`}
+          <br />{`{{descriptor}}`}
+          {`{{/if}}`}
         </p>
         {`{{/if}}`}
         {`{{/unless}}`}
