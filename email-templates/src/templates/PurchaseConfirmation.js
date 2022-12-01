@@ -129,6 +129,14 @@ const OrderPayment = (props) => (
             {props.paidWith}
           </p>
         </div>
+        {`{{#if ${props.orderNumber}}}`}
+        <div style={{ ...style.bigMargin, ...style.boldText }}>
+          <p style={style.firstElement}>Order ID</p>
+          <p style={{ ...style.secondElement, ...style.defaultMargin }}>
+            {`{{${props.orderNumber}}}`}
+          </p>
+        </div>
+        {`{{/if}}`}
         {`{{#if ${props.txId}}}`}
         <div style={{ ...style.bigMargin, ...style.boldText }}>
           <p style={style.firstElement}>Transaction ID</p>
@@ -176,6 +184,7 @@ function PurchaseConfirmation() {
           paidWith={`{{successedOrderPaymentInfo.paidWith}}`}
           txIds={`successedOrderPaymentInfo.txIds`}
           txId={`successedOrderPaymentInfo.txId`}
+          orderNumber={`successedOrderPaymentInfo.orderNumber`}
         />
         {`{{else}}`}
         {`{{/if}}`}
@@ -196,6 +205,7 @@ function PurchaseConfirmation() {
             paidWith={`{{failedOrderPaymentInfo.paidWith}}`}
             txIds={`failedOrderPaymentInfo.txIds`}
             txId={`failedOrderPaymentInfo.txId`}
+            orderNumber={`failedOrderPaymentInfo.orderNumber`}
           />
           {`{{else}}`}
         {`{{/if}}`}
