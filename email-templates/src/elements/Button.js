@@ -3,7 +3,6 @@ import React from 'react';
 import Grid from '../layout/Grid';
 
 const style = {
-
   wrapper: {
     width: 'auto',
     margin: '10px 0 15px',
@@ -11,15 +10,15 @@ const style = {
 
   button: {
     width: 'auto',
-    backgroundColor: '#4588FF',
-    borderRadius: '8px',
+    backgroundColor: '#765CD6',
+    borderRadius: '100px',
     display: 'inline-block',
     fontSize: '12px',
     fontWeight: '600',
-    borderTop: '10px solid #4588FF',
-    borderBottom: '10px solid #4588FF',
-    borderLeft: '50px solid #4588FF',
-    borderRight: '50px solid #4588FF',
+    borderTop: '10px solid #765CD6',
+    borderBottom: '10px solid #765CD6',
+    borderLeft: '50px solid #765CD6',
+    borderRight: '50px solid #765CD6',
     color: '#ffffff',
     textDecoration: 'none',
     textAlign: 'center',
@@ -27,7 +26,6 @@ const style = {
     WebkitBoxShadow: '0px 0px 8px 0px rgba(0, 0, 0, 0.11)',
     boxShadow: '0px 0px 8px 0px rgba(0, 0, 0, 0.11)',
   },
-
 };
 
 function Button({ children }) {

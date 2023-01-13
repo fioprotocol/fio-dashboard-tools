@@ -3,15 +3,12 @@ import React from 'react';
 import Grid from '../layout/Grid';
 import Img from './Img';
 
-// const logoSrc = 'https://dapp-dev.fioprotocol.io/static/media/fiologo.1a7173cb.svg';
 const logoSrc = 'cid:fiologo.png';
 
 const style = {
-
   header: {
     margin: '0 auto',
-    backgroundColor: '#0e0d26',
-    background: `linear-gradient(172.92deg, #181642 0%, #000000 100%)`,
+    backgroundColor: '#2B2B2E',
     width: '100%',
     WebkitBoxShadow: '0px 6px 28px -3px rgba(0,0,0,0.76)',
     boxShadow: '0px 6px 28px -3px rgba(0,0,0,0.76)',
