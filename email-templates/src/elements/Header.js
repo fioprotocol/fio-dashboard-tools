@@ -3,8 +3,6 @@ import React from 'react';
 import Grid from '../layout/Grid';
 import Img from './Img';
 
-const logoSrc = 'cid:fiologo.png';
-
 const style = {
   header: {
     margin: '0 auto',
@@ -45,7 +43,7 @@ function Header(props) {
   return (
     <Grid style={style.header} className="header-bg">
       <Grid.Row>
-        <Img style={style.img} src={logoSrc} alt="logo" />
+        <Img style={style.img} src={`{{logoSrc}}`} alt="logo" />
         <p style={style.title} className="header-title">{title}</p>
       </Grid.Row>
     </Grid>
