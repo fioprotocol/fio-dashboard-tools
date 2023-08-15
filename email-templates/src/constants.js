@@ -90,11 +90,11 @@ export const TRANSACTIONAL_EMAIL_DATA_TITLE = {
     'Expiration Date',
   ],
   [TRANSACTIONAL_EMAIL_DATA_FIELDS.LOW_BUNDLE_COUNT]: [
-    'FIO Crypto Handle',
+    'FIO Handle',
     'Bundle Remaining',
   ],
   [TRANSACTIONAL_EMAIL_DATA_FIELDS.REQUESTING_FIO_CRYPTO_HANDLE]:
-    'Requesting FIO Crypto Handle',
+    'Requesting FIO Handle',
   [TRANSACTIONAL_EMAIL_DATA_FIELDS.REQUEST_SENT_TO]: 'Request Sent To',
 };
 
