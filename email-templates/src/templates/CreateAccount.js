@@ -29,10 +29,10 @@ function CreateAccount({ text }) {
 
   return (
     <Grid style={style.container}>
-      <Title>Thank you for creating a FIO Dashboard account!</Title>
+      <Title>Thank you for creating a FIO App account!</Title>
 
       <p style={style.text}>
-        Please remember that for your security FIO Dashboard Team does not have access to your password or your private keys. We cannot reset your password in case you forget it, like many website do.
+        Please remember that for your security FIO App Team does not have access to your password or your private keys. We cannot reset your password in case you forget it, like many website do.
       </p>
 
       <Badge showIcon={true}><b>Write down your password</b> - It is very important that you write down your password in a secure location.</Badge>
@@ -42,7 +42,7 @@ function CreateAccount({ text }) {
       </p>
 
       <p style={style.text}>
-        <b>FIO Dashboard Team will not be able to reset your password and you will not be able to access the FIO Dashboard.</b>
+        <b>FIO App Team will not be able to reset your password and you will not be able to access the FIO App.</b>
       </p>
 
       <Signature />

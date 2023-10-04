@@ -24,7 +24,7 @@ function Signature() {
         Best wishes,
       </p>
       <p style={style.signature}>
-        <b>The FIO Dashboard Team</b>
+        <b>The FIO App Team</b>
       </p>
     </Grid>
   );
