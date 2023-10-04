@@ -44,7 +44,7 @@ function PassRecovery({ text }) {
       <Title>Hi!,</Title>
 
       <p style={style.text}>
-        Please keep this email and the recovery link below to access FIO Dashboard in case you lose your password. <b>Without this email and recover link, you will not be able to recover your account.</b>
+        Please keep this email and the recovery link below to access FIO App in case you lose your password. <b>Without this email and recover link, you will not be able to recover your account.</b>
       </p>
 
       <a href="{{link}}" style={style.link} target="__blank">

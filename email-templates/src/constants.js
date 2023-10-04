@@ -58,7 +58,7 @@ export const EMAIL_TEMPLATES_TYPES_CONTENT = {
     renderComponent: (props) => <ConfirmEmail {...props} />,
   },
   [EMAIL_TEMPLATES_TYPES.CREATE_ACCOUNT]: {
-    title: 'Welcome to the FIO Dashboard',
+    title: 'Welcome to the FIO App',
     renderComponent: (props) => <CreateAccount {...props} />,
   },
   [EMAIL_TEMPLATES_TYPES.PURCHASE_CONFIRMATION]: {
