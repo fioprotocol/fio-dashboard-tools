@@ -27,3 +27,4 @@ generate('passRecovery')
 generate('confirmEmail')
 generate('createAccount')
 generate('purchaseConfirmation');
+generate('common');

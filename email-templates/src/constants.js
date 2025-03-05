@@ -5,6 +5,7 @@ import PassRecovery from './templates/PassRecovery';
 import ConfirmEmail from './templates/ConfirmEmail';
 import CreateAccount from './templates/CreateAccount';
 import PurchaseConfirmation from './templates/PurchaseConfirmation';
+import Common from './templates/Common';
 import {
   RenderDefaultField,
   RenderCryptoHandleField,
@@ -23,6 +24,7 @@ export const EMAIL_TEMPLATES_TYPES = {
   CONFIRM_EMAIL: 'confirmEmail',
   CREATE_ACCOUNT: 'createAccount',
   PURCHASE_CONFIRMATION: 'purchaseConfirmation',
+  COMMON: 'common',
 };
 
 export const EMAIL_TEMPLATES_TYPES_CONTENT = {
@@ -64,6 +66,10 @@ export const EMAIL_TEMPLATES_TYPES_CONTENT = {
   [EMAIL_TEMPLATES_TYPES.PURCHASE_CONFIRMATION]: {
     title: 'Purchase Confirmation',
     renderComponent: (props) => <PurchaseConfirmation {...props} />,
+  },
+  [EMAIL_TEMPLATES_TYPES.COMMON]: {
+    title: '{{headerTitle}}',
+    renderComponent: (props) => <Common {...props} />,
   },
 };
 
